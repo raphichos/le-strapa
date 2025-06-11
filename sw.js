@@ -4,7 +4,7 @@ self.addEventListener("install", (event) => {
       return cache.addAll([
         "./",
         "./index.html",
-        "./audio/amore_mio_aiutami.mp3",
+        "./audio/Amore Mio Aiutami (Main Theme)  Piero Piccioni (High Quality Audio).mp3",
         "./manifest.json",
         "./icon/icon-192.png",
       ]);
