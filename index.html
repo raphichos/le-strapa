@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas // XVIII</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: #fafafa;
+      color: #1f1f1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.2em;
+      letter-spacing: 1.5px;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #888;
+      font-size: 1.3rem;
+      margin-bottom: 1.8em;
+      text-transform: uppercase;
+    }
+
+    .section {
+      max-width: 800px;
+      padding: 2em;
+      background: #ffffff;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 2.5em 0;
+      color: #555;
+    }
+
+    .gallery {
+      margin-top: 2.5em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 120px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .play-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #1f1f1f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .play-button:hover {
+      background: #444;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="play-button" onclick="playAudio(this)">Play Music 🎵</button>
+  <audio id="bg-audio">
+    <source src="./audio/Amore Mio Aiutami (Main Theme)  Piero Piccioni (High Quality Audio).mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="section">
+    <h1>Lucas // 18</h1>
+    <h2>art • architecture • fashion • music • perfection</h2>
+    <p class="quote">“The purpose of art is washing the dust of daily life off our souls.” – Pablo Picasso</p>
+    <p>
+      Lucas, ever since I met you here in FADMINAS, you've been one of the most amazing people and friends in my life. You've helped me through so much, and taught me even more, especially about myself lol. Your presence, your light, your humor - you lift up everyone around you, even when things are heavy.
+    </p>
+    <p>
+      You're someone I look up to and hope to become more like in the future. Your ability to make people smile, to create beauty in the world — it's something rare and powerful. Thank you for being the talented, caring, loving friend that you are. I'm endlessly grateful. (sorry for all my annoyingness too lmao) (:
+    </p>
+    <p>
+      I’ll always be here for you. Always cheering for you. Always grateful for you.
+    </p>
+    <p class="quote">(Also… desculpa por n ter comprado nada kkkk. I’m broke. So I made this instead. Consider it an artwork for u... kkkkkk.)</p>
+
+    <div class="gallery">
+      <img src="./images/IMG_9004.jpg" alt="architecture" />
+      <img src="./images/IMG_9005.jpg" alt="art" />
+      <img src="./images/IMG_9006.jpg" alt="fashion" />
+      <img src="./images/IMG_9007.jpg" alt="music" />
+      <img src="./images/IMG_9008.jpg" alt="aesthetic" />
+    </div>
+
+    <p class="quote">Here’s to your journey: always creative, always curious, always Lucas.</p>
+  </div>
+
+  <footer>
+    Created by ur most amazing, incredible, gringo friend raphinhaaaa • June 2025
+  </footer>
+
+  <script>
+    function playAudio(button) {
+      const audio = document.getElementById('bg-audio');
+      audio.play();
+      button.style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
