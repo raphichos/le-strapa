@@ -6,7 +6,7 @@ self.addEventListener("install", (event) => {
         "./index.html",
         "./audio/Amore Mio Aiutami (Main Theme)  Piero Piccioni (High Quality Audio).mp3",
         "./manifest.json",
-        "./icon/icon-192.png",
+        "./icons/icon-192.png",
       ]);
     })
   );
